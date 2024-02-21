@@ -215,7 +215,7 @@ def checkForUpdates():
 def resultDisplay():
     today_date = GlobalVariable.final_result["today_date"]
     today_total_point = GlobalVariable.final_result["today_total_point"]
-    title = "[JDRouter]: " + today_total_point + "(" + today_date + ")"
+    title = "今日到账 [" + today_total_point + "] 积分
     if GlobalVariable.final_result.get("todayDate") is None:
         push("信息获取失败,无权限", "请检查wskey是否有效")
         return
